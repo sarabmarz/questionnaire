@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/questionnaire.css" />
+    <link rel="shortcut icon" href="#" />
+    <script src="scripts/form_manager.js" defer></script>
+
+    <title>User Questionnaire</title>
+  </head>
+
+  <body class="d-flex flex-column text-dark">
+    <main class="container title">
+      <div
+        class="d-flex justify-content-center align-items-center flex-column"
+        style="height: 75px"
+      >
+        <h1>Questionnaire</h1>
+        <h6>Parte 3</h6>
+      </div>
+    </main>
+
+    <section id="final_rate" class="container-xxl bg-light for_scroll">
+      <div class="gradient-bottom" style="width: 60vw"></div>
+      <form name="fdglobal" id="questionnaire_p3" action="results.html">
+        <fieldset>
+          <div
+            class="bg-light"
+            style="position: fixed; height: 100px; padding-top: 50px"
+          >
+            <legend>Experiência de Utilização</legend>
+            <hr class="solid" style="width: 60vw" />
+            <div class="gradient-top"></div>
+          </div>
+
+          <article class="first_q" id="dp11">
+            <h5>
+              Para cada par de adjetivos, selecione a opção que melhor descreve
+              a sua experiência de utilização deste site.
+            </h5>
+            <table class="table-responsive">
+              <tr>
+                <td>Horrível</td>
+                <td>
+                  <input
+                    type="range"
+                    class="form-range"
+                    style="color: black"
+                    name="q14"
+                    min="0"
+                    max="7"
+                    id="customRange2"
+                  />
+                </td>
+                <td style="padding-left: 50px">Fantástica</td>
+              </tr>
+              <tr>
+                <td>Aborrecida</td>
+                <td>
+                  <input
+                    type="range"
+                    class="form-range"
+                    name="q15"
+                    min="0"
+                    max="7"
+                    id="customRange2"
+                  />
+                </td>
+                <td style="padding-left: 50px">Estimulante</td>
+              </tr>
+              <tr>
+                <td>Frustrante</td>
+                <td>
+                  <input
+                    type="range"
+                    class="form-range"
+                    name="q16"
+                    min="0"
+                    max="7"
+                    id="customRange2"
+                  />
+                </td>
+                <td style="padding-left: 50px">Gratificante</td>
+              </tr>
+              <tr>
+                <td>Difícil</td>
+                <td>
+                  <input
+                    type="range"
+                    class="form-range"
+                    name="q17"
+                    min="0"
+                    max="7"
+                    id="customRange2"
+                  />
+                </td>
+                <td style="padding-left: 50px">Fácil</td>
+              </tr>
+            </table>
+          </article>
+          <!--Fim da Experiência de utilização-->
+
+          <br />
+
+          <!--Resultado pesquisa por categoria-->
+          <article id="dp12">
+            <h5>
+              Como classifica os resultados obtidos pela pesquisa por Categoria?
+              *
+            </h5>
+            <br />
+
+            <table class="table-responsive">
+              <tr>
+                <td>Mau</td>
+                <td class="1to5">
+                  <div class="form-check form-check-inline">
+                    <input id="av21" type="radio" name="q18" value="1" />
+                    <label for="name1">1</label>
+                  </div>
+
+                  <!-- <label id="cima" for="av21"
+                  >Mau<br />
+                  <input id="av21" type="radio" name="q18" value="1" />
+                  <label for="av21">1</label>
+                </label> -->
+
+                  <div class="form-check form-check-inline">
+                    <input id="av22" type="radio" name="q18" value="2" />
+                    <label for="av22">2</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input id="av23" type="radio" name="q18" value="3" />
+                    <label for="av23">3</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input id="av24" type="radio" name="q18" value="4" />
+                    <label for="av24">4</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                      id="av25"
+                      type="radio"
+                      name="q18"
+                      value="5"
+                      required
+                    />
+                    <label for="av25">5</label>
+                  </div>
+
+                  <!-- <label id="cima" for="av25"
+                  >Excelentes<br />
+                  <input id="av25" type="radio" name="q18" value="5" required />
+                  <label for="av25">5</label>
+                </label> -->
+                </td>
+                <td>Excelentes</td>
+              </tr>
+            </table>
+          </article>
+          <!--Fim do resultado pesquisa por categoria-->
+
+          <!--Resultado pesquisa por cor-->
+          <article id="dp13">
+            <h5>Como classifica o resultado obtido pela pesquisa por Cor? *</h5>
+
+            <br />
+
+            <table class="table-responsive">
+              <tr>
+                <td>Mau</td>
+                <td>
+                  <div class="form-check form-check-inline">
+                    <input id="av31" type="radio" name="q19" value="1" />
+                    <label for="av31">1</label>
+                  </div>
+
+                  <!-- <label id="cima" for="av31"
+              >Mau<br />
+              <input id="av31" type="radio" name="q19" value="1" />
+              <label for="av31">1</label>
+            </label> -->
+
+                  <div class="form-check form-check-inline">
+                    <input id="av32" type="radio" name="q19" value="2" />
+                    <label for="av32">2</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input id="av33" type="radio" name="q19" value="3" />
+                    <label for="av33">3</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input id="av34" type="radio" name="q19" value="4" />
+                    <label for="av34">4</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                      id="av35"
+                      type="radio"
+                      name="q19"
+                      value="5"
+                      required
+                    />
+                    <label for="av35">5</label>
+                  </div>
+
+                  <!-- <label id="cima" for="av35"
+              >Excelentes<br />
+              <input id="av35" type="radio" name="q19" value="5" required />
+              <label for="av35">5</label>
+            </label> -->
+                </td>
+                <td>Excelentes</td>
+              </tr>
+            </table>
+          </article>
+          <!--Fim do resultado pesquisa por cor-->
+
+          <!--Resultado pesquisa por imagens-->
+          <article id="dp14">
+            <h5>
+              Como classifica o resultado obtido pela pesquisa por Imagens? *
+            </h5>
+
+            <br />
+            <table class="table-responsive">
+              <tr>
+                <td>Mau</td>
+                <td>
+                  <div class="form-check form-check-inline">
+                    <input id="av41" type="radio" name="q20" value="1" />
+                    <label for="av41">1</label>
+                  </div>
+                  <!-- 
+            <label id="cima" for="av41"
+              >Mau<br />
+              <input id="av41" type="radio" name="q20" value="1" />
+              <label for="av41">1</label>
+            </label> -->
+
+                  <div class="form-check form-check-inline">
+                    <input id="av42" type="radio" name="q20" value="2" />
+                    <label for="av42">2</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input id="av43" type="radio" name="q20" value="3" />
+                    <label for="av43">3</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input id="av44" type="radio" name="q20" value="4" />
+                    <label for="av44">4</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                      id="av45"
+                      type="radio"
+                      name="q20"
+                      value="5"
+                      required
+                    />
+                    <label for="av45">5</label>
+                  </div>
+                  <!-- 
+            <label id="cima" for="av45"
+              >Excelentes<br />
+              <input id="av45" type="radio" name="q20" value="5" required />
+              <label for="av45">5</label>
+            </label> -->
+                </td>
+                <td>Excelentes</td>
+              </tr>
+            </table>
+          </article>
+          <!--Fim do resultado pesquisa por imagens-->
+
+          <!--Resultado pesquisa por imagens semelhantes-->
+          <article id="dp15">
+            <h5>
+              Como classifica a utilidade da pesquisa por Imagens Semelhantes? *
+            </h5>
+            <br />
+
+            <table class="table-responsive">
+              <tr>
+                <td>Pouca</td>
+                <td>
+                  <div class="form-check form-check-inline">
+                    <input id="av51" type="radio" name="q21" value="1" />
+                    <label for="av51">1</label>
+                  </div>
+                  <!-- 
+            <label id="cima" for="av51"
+              >Pouca<br />
+              <input id="av51" type="radio" name="q21" value="1" />
+              <label for="av51">1</label>
+            </label> -->
+
+                  <div class="form-check form-check-inline">
+                    <input id="av52" type="radio" name="q21" value="2" />
+                    <label for="av52">2</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input id="av53" type="radio" name="q21" value="3" />
+                    <label for="av53">3</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input id="av54" type="radio" name="q21" value="4" />
+                    <label for="av54">4</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                      id="av55"
+                      type="radio"
+                      name="q21"
+                      value="5"
+                      required
+                    />
+                    <label for="av55">5</label>
+                  </div>
+
+                  <!-- <label id="cima" for="av55"
+              >Muita<br />
+              <input id="av55" type="radio" name="q21" value="5" required />
+              <label for="av55">5</label>
+            </label> -->
+                </td>
+                <td>Muita</td>
+              </tr>
+            </table>
+          </article>
+          <!--Fim do resultado pesquisa por imagens semelhantes-->
+
+          <!--Sistema de Navegação-->
+          <article id="dp16">
+            <h5>Como classifica o sistema de navegação do site? *</h5>
+            <br />
+
+            <table class="table-responsive">
+              <tr>
+                <td>Mau</td>
+                <td>
+                  <div class="form-check form-check-inline">
+                    <input id="av61" type="radio" name="q22" value="1" />
+                    <label for="av61">1</label>
+                  </div>
+
+                  <!-- <label id="cima" for="av61"
+              >Mau<br />
+              <input id="av61" type="radio" name="q22" value="1" />
+              <label for="av61">1</label>
+            </label> -->
+
+                  <div class="form-check form-check-inline">
+                    <input id="av62" type="radio" name="q22" value="2" />
+                    <label for="av62">2</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input id="av63" type="radio" name="q22" value="3" />
+                    <label for="av63">3</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input id="av64" type="radio" name="q22" value="4" />
+                    <label for="av64">4</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                      id="av65"
+                      type="radio"
+                      name="q22"
+                      value="5"
+                      required
+                    />
+                    <label for="av65">5</label>
+                  </div>
+
+                  <!-- <label id="cima" for="av65"
+              >Excelentes<br />
+              <input id="av65" type="radio" name="q22" value="5" required />
+              <label for="av65">5</label>
+            </label> -->
+                </td>
+                <td>Excelentes</td>
+              </tr>
+            </table>
+          </article>
+          <!--Fim do Sistema de Navegação-->
+
+          <!--Design-->
+          <article id="dp13">
+            <h5>Como classifica o design do site? *</h5>
+            <br />
+
+            <table class="table-responsive">
+              <tr>
+                <td>Mau</td>
+                <td>
+                  <div class="form-check form-check-inline">
+                    <input id="av31" type="radio" name="q23" value="1" />
+                    <label for="av31">1</label>
+                  </div>
+
+                  <!-- <label id="cima" for="av31"
+              >Mau<br />
+              <input id="av31" type="radio" name="q23" value="1" />
+              <label for="av31">1</label>
+            </label> -->
+
+                  <div class="form-check form-check-inline">
+                    <input id="av32" type="radio" name="q23" value="2" />
+                    <label for="av32">2</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input id="av33" type="radio" name="q23" value="3" />
+                    <label for="av33">3</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input id="av34" type="radio" name="q23" value="4" />
+                    <label for="av34">4</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                      id="av35"
+                      type="radio"
+                      name="q23"
+                      value="5"
+                      required
+                    />
+                    <label for="av35">5</label>
+                  </div>
+
+                  <!-- <label id="cima" for="av35"
+              >Excelentes<br />
+              <input id="av35" type="radio" name="q23" value="5" required />
+              <label for="av35">5</label>
+            </label> -->
+                </td>
+                <td>Excelentes</td>
+              </tr>
+            </table>
+          </article>
+          <!--Fim do Design-->
+
+          <br />
+
+          <p class="ital">
+            * Questões de resposta obrigatória. <br />** Questão de resposta
+            obrigatória (pelo menos uma preferência).
+          </p>
+
+          <!-- <div id="myProgress">
+            <div id="myBar3"></div>
+          </div> -->
+
+          <!--Botão submit-->
+          <div id="submit">
+            <input id="sub" type="submit" name="submit" value="Submit" />
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+    <div class="container end">
+      <div
+        class="d-flex justify-content-center align-items-center flex-column"
+        style="height: 75px"
+      ></div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

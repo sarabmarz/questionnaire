@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/questionnaire.css" />
+    <link rel="shortcut icon" href="#" />
+    <script src="scripts/form_manager.js" defer></script>
+
+    <title>User Questionnaire</title>
+  </head>
+
+  <!-- INICIO QUESTIONARIO -->
+
+  <body class="d-flex flex-column text-dark">
+    <main class="container title">
+      <div
+        class="d-flex justify-content-center align-items-center flex-column"
+        style="height: 75px"
+      >
+        <h1>Questionnaire</h1>
+        <h6>Parte 2</h6>
+      </div>
+    </main>
+
+    <section id="task" class="container-xxl bg-light for_scroll">
+      <div class="gradient-bottom" style="width: 60vw"></div>
+      <form
+        name="fdtarefas"
+        id="questionnaire_p2"
+        action="questionnaire_p3.html"
+      >
+        <fieldset>
+          <div
+            class="bg-light"
+            style="position: fixed; height: 131px; padding-top: 50px"
+          >
+            <legend class="noGap">Tarefas</legend>
+            <p class="ital gap">
+              Por favor, realize as seguintes tarefas e descreva-nos os
+              resultados obtidos.
+            </p>
+            <hr class="solid" style="width: 60vw" />
+            <div class="gradient-top"></div>
+          </div>
+
+          <div class="page-content">
+            <!------------------ QUESTION N1 ------------------>
+            <article class="first_q" id="dp9">
+              <h5>Tarefa 1 - Explorar</h5>
+
+              <p>Explore o site livremente.</p>
+              <textarea
+                class="form-control"
+                rows="3"
+                cols="85"
+                name="q9"
+                placeholder="Que dificuldades encontrou?"
+              ></textarea>
+            </article>
+
+            <!------------------ QUESTION N2 ------------------>
+            <article id="dp10">
+              <h5>Tarefa 2 - Pesquisa Categorias</h5>
+
+              <p>
+                Escolha a opção de pesquisa por palavra chave, selecione uma
+                categoria à sua escolha e observe os resultados.
+              </p>
+              <textarea
+                class="form-control"
+                rows="3"
+                cols="85"
+                name="q10"
+                placeholder="Que dificuldades encontrou?"
+              ></textarea>
+            </article>
+
+            <!------------------ QUESTION N3 ------------------>
+            <article id="dp11">
+              <h5>Tarefa 3 - Pesquisa Cor</h5>
+              <p>
+                Escolha a opção de pesquisa por cor dominante, selecione uma cor
+                à sua escolha e observe os resultados.
+              </p>
+              <textarea
+                class="form-control"
+                rows="3"
+                cols="85"
+                name="q11"
+                placeholder="Que dificuldades encontrou?"
+              ></textarea>
+            </article>
+
+            <!------------------ QUESTION N4 ------------------>
+            <article id="dp12">
+              <h5>Tarefa 4 - Pesquisa Imagens Semelhantes</h5>
+              <p>
+                Escolha a opção de pesquisa por imagens semelhantes, selecione
+                uma imagem à sua escolha e observe os resultados.
+              </p>
+              <textarea
+                class="form-control"
+                rows="3"
+                cols="85"
+                name="q12"
+                placeholder="Que dificuldades encontrou?"
+              ></textarea>
+            </article>
+
+            <article id="dp1">
+              <textarea
+                class="form-control"
+                rows="3"
+                cols="85"
+                name="q13"
+                placeholder="Qual o tipo de pesquisa que acha mais adequado?"
+              ></textarea>
+            </article>
+          </div>
+
+          <!------------------ END ------------------>
+
+          <!-- <div id="myProgress">
+            <div id="myBar2"></div>
+          </div> -->
+
+          <div id="submit" class="mb-3">
+            <input id="sub" type="submit" name="submit" value="Continuar" />
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+    <div class="container end">
+      <div
+        class="d-flex justify-content-center align-items-center flex-column"
+        style="height: 75px"
+      ></div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

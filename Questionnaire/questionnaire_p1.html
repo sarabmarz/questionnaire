@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/questionnaire.css" />
+    <link rel="shortcut icon" href="#" />
+    <script src="scripts/form_manager.js" defer></script>
+
+    <title>User Questionnaire</title>
+  </head>
+
+  <!-- INICIO QUESTIONARIO -->
+  <body class="d-flex flex-column text-dark">
+    <main class="container title">
+      <div
+        class="d-flex justify-content-center align-items-center flex-column"
+        style="height: 75px"
+      >
+        <h1>Questionnaire</h1>
+        <h6>Parte 1</h6>
+      </div>
+    </main>
+
+    <section id="user_info" class="container-xxl bg-light for_scroll">
+      <div class="gradient-bottom" style="width: 60vw"></div>
+      <form
+        name="fdpessoais"
+        id="questionnaire_p1"
+        action="questionnaire_p2.html"
+      >
+        <fieldset>
+          <div
+            class="bg-light"
+            style="position: fixed; height: 100px; padding-top: 50px"
+          >
+            <legend>Dados Pessoais</legend>
+            <hr class="solid" style="width: 60vw" />
+            <div class="gradient-top"></div>
+          </div>
+
+          <div class="page-content">
+            <!------------------ QUESTION N1 ------------------>
+            <article class="first_q" id="q1">
+              <h5>Idade? *</h5>
+              <div class="form-check form-check-inline">
+                <input
+                  id="name1"
+                  type="radio"
+                  name="years"
+                  value="&lt;18"
+                  required
+                />
+                <label for="name1">&lt; 18</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input id="name2" type="radio" name="years" value="18 - 24" />
+                <label for="name2">18 - 24</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input id="name3" type="radio" name="years" value="25 - 29" />
+                <label for="name3"> 25 - 29 </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input id="name4" type="radio" name="years" value="30 - 34" />
+                <label for="name4">30 - 34</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input id="name5" type="radio" name="years" value="35 - 39" />
+                <label for="name5">35 - 39</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input id="name6" type="radio" name="years" value="&gt; 40" />
+                <label for="name6">&gt; 40</label>
+              </div>
+            </article>
+
+            <!------------------ QUESTION N2 ------------------>
+            <article id="q2">
+              <h5>Género? *</h5>
+              <div class="form-group col-md-4">
+                <select
+                  id="inputState"
+                  class="custom-select form-control rounded"
+                  name="gender"
+                  required
+                >
+                  <option selected>Choose...</option>
+                  <option id="masc" name="gender" value="masculino">
+                    Masculino
+                  </option>
+                  <option id="fem" name="gender" value="feminino">
+                    Feminino
+                  </option>
+                  <option id="nbinary" name="gender" value="nbinary">
+                    Não binário
+                  </option>
+                  <option id="noAnswer" name="gender" value="noAnswer">
+                    Prefiro não responder
+                  </option>
+                </select>
+              </div>
+              <!-- <div class="form-check form-check-inline">
+                <input
+                  id="masc"
+                  type="radio"
+                  name="gender"
+                  value="masculino"
+                  required
+                />
+                <label for="masc">Masculino</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input id="fem" type="radio" name="gender" value="feminino" />
+                <label for="feminino">Feminino</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  id="nbinary"
+                  type="radio"
+                  name="gender"
+                  value="nbinary"
+                />
+                <label for="nbinary">Não-binário</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  id="noAnswer"
+                  type="radio"
+                  name="gender"
+                  value="noAnswer"
+                />
+                <label for="noAnswer">Prefiro não responder</label>
+              </div> -->
+            </article>
+
+            <!------------------ QUESTION N3 ------------------>
+            <article id="q3">
+              <h5>Com que frequência usa a Internet? *</h5>
+              <div class="form-check form-check-inline">
+                <input
+                  id="daily"
+                  type="radio"
+                  name="wifi"
+                  value="daily"
+                  required
+                />
+                <label for="daily"> Diariamente </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input id="weekly" type="radio" name="wifi" value="weekly" />
+                <label for="weekly"> Algumas vezes por semana </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input id="monthly" type="radio" name="wifi" value="monthly" />
+                <label for="monthly"> Algumas vezes por mês </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input id="rarely" type="radio" name="wifi" value="rarely" />
+                <label for="rarely"> Raramente </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input id="never" type="radio" name="wifi" value="never" />
+                <label for="never"> Nunca </label>
+              </div>
+            </article>
+
+            <!------------------ QUESTION N4 ------------------>
+            <article id="q8">
+              <h5>
+                Indique, por ordem de preferência, os Web Browsers que mais
+                utiliza. **
+              </h5>
+              <br />
+              <table>
+                <tr>
+                  <th class="column_o">Browser</th>
+                  <th class="first_o">Most Used</th>
+                  <th class="table_o"></th>
+                  <th class="table_o">Least Used</th>
+                </tr>
+                <tr>
+                  <td>Chrome</td>
+                  <td class="centered first_o">
+                    <input
+                      onclick="FirstOption()"
+                      id="f0"
+                      type="radio"
+                      name="q4"
+                      value="0"
+                    />
+                  </td>
+                  <td class="centered table_o">
+                    <input
+                      onclick="SecondOption()"
+                      id="s0"
+                      type="radio"
+                      name="q5"
+                      value="0"
+                    />
+                  </td>
+                  <td class="centered table_o">
+                    <input
+                      onclick="ThirdOption()"
+                      id="t0"
+                      type="radio"
+                      name="q6"
+                      value="0"
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Firefox</td>
+                  <td class="centered first_o">
+                    <input
+                      onclick="FirstOption()"
+                      id="f1"
+                      type="radio"
+                      name="q4"
+                      value="1"
+                    />
+                  </td>
+                  <td class="centered table_o">
+                    <input
+                      onclick="SecondOption()"
+                      id="s1"
+                      type="radio"
+                      name="q5"
+                      value="1"
+                    />
+                  </td>
+                  <td class="centered table_o">
+                    <input
+                      onclick="ThirdOption()"
+                      id="t1"
+                      type="radio"
+                      name="q6"
+                      value="1"
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Opera</td>
+                  <td class="centered first_o">
+                    <input
+                      onclick="FirstOption()"
+                      id="f2"
+                      type="radio"
+                      name="q4"
+                      value="2"
+                    />
+                  </td>
+                  <td class="centered table_o">
+                    <input
+                      onclick="SecondOption()"
+                      id="s2"
+                      type="radio"
+                      name="q5"
+                      value="2"
+                    />
+                  </td>
+                  <td class="centered table_o">
+                    <input
+                      onclick="ThirdOption()"
+                      id="t2"
+                      type="radio"
+                      name="q6"
+                      value="2"
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Opera GX</td>
+                  <td class="centered first_o">
+                    <input
+                      onclick="FirstOption()"
+                      id="f3"
+                      type="radio"
+                      name="q4"
+                      value="3"
+                    />
+                  </td>
+                  <td class="centered table_o">
+                    <input
+                      onclick="SecondOption()"
+                      id="s3"
+                      type="radio"
+                      name="q5"
+                      value="3"
+                    />
+                  </td>
+                  <td class="centered table_o">
+                    <input
+                      onclick="ThirdOption()"
+                      id="t3"
+                      type="radio"
+                      name="q6"
+                      value="3"
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Safari</td>
+                  <td class="centered first_o">
+                    <input
+                      onclick="FirstOption()"
+                      id="f4"
+                      type="radio"
+                      name="q4"
+                      value="4"
+                    />
+                  </td>
+                  <td class="centered table_o">
+                    <input
+                      onclick="SecondOption()"
+                      id="s4"
+                      type="radio"
+                      name="q5"
+                      value="4"
+                    />
+                  </td>
+                  <td class="centered table_o">
+                    <input
+                      onclick="ThirdOption()"
+                      id="t4"
+                      type="radio"
+                      name="q6"
+                      value="4"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Microsoft Edge</td>
+                  <td class="centered first_o">
+                    <input
+                      onclick="FirstOption()"
+                      id="f5"
+                      type="radio"
+                      name="q4"
+                      value="5"
+                      required
+                    />
+                  </td>
+                  <td class="centered table_o">
+                    <input
+                      onclick="SecondOption()"
+                      id="s5"
+                      type="radio"
+                      name="qq5"
+                      value="5"
+                    />
+                  </td>
+                  <td class="centered table_o">
+                    <input
+                      onclick="ThirdOption()"
+                      id="t5"
+                      type="radio"
+                      name="q6"
+                      value="5"
+                    />
+                  </td>
+                </tr>
+              </table>
+            </article>
+
+            <!------------------ QUESTION N5 ------------------>
+
+            <article id="q7">
+              <h5>Outros sites de organização e pesquisa de imagens?</h5>
+              <div class="form-check form-check-inline">
+                <input
+                  id="a5_no"
+                  onclick="Write_Text()"
+                  type="radio"
+                  name="otherWebsites"
+                  value="no"
+                  required
+                />
+                <label for="nao"> Não </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  id="a5_yes"
+                  onclick="Write_Text()"
+                  type="radio"
+                  name="otherWebsites"
+                  value="yes"
+                />
+                <label for="sim"> Sim </label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  id="other"
+                  class="form-control rounded"
+                  type="text"
+                  placeholder="Outro"
+                  name="which"
+                  disabled
+                />
+              </div>
+            </article>
+          </div>
+
+          <!------------------ END ------------------>
+
+          <!-- IR A PARTE 2 -->
+          <div id="submit">
+            <!-- <a href="questionnaire_p2.html"> -->
+            <input id="sub" type="submit" name="submit" value="Continuar" />
+            <!-- </a> -->
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <div class="container end">
+      <div
+        class="d-flex justify-content-center align-items-center flex-column"
+        style="height: 75px"
+      ></div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
